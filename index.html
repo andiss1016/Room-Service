@@ -3,129 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meniu Oficial | Room Service 25</title>
+    <title>Room Service 25 | Meniu & Bistro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;600&display=swap');
         body { font-family: 'Montserrat', sans-serif; background-color: #fff; color: #1a1a1a; scroll-behavior: smooth; }
         h1, h2, h3, .font-serif { font-family: 'Italiana', serif; }
-        .category-card { border: 1px solid #f0f0f0; border-radius: 1rem; padding: 1.5rem; transition: all 0.3s; }
-        .category-card:hover { border-color: #8b7355; box-shadow: 0 10px 30px -15px rgba(139, 115, 85, 0.2); }
         .price-tag { color: #8b7355; font-weight: 600; font-family: 'Italiana', serif; font-size: 1.25rem; }
+        .menu-row { display: flex; justify-content: space-between; border-bottom: 1px dashed #ddd; padding: 10px 0; }
     </style>
 </head>
 <body>
 
     <nav class="p-5 sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-stone-100 flex justify-between items-center">
         <span class="text-xl font-serif tracking-widest text-stone-900 uppercase">Room Service 25</span>
-        <a href="https://wa.me/407XXXXXXXX" class="bg-stone-900 text-white px-5 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold">Comandă acum</a>
+        <a href="#location" class="text-[10px] uppercase tracking-widest font-bold border border-black px-4 py-2 rounded-full">Contact</a>
     </nav>
 
-    <header class="py-16 text-center bg-stone-50">
-        <h1 class="text-5xl italic mb-2">Meniul Nostru</h1>
-        <p class="text-stone-400 text-[10px] uppercase tracking-[0.4em]">București • Regina Elisabeta 25</p>
+    <header class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <img src="foto1.jpg" alt="Room Service Food" class="absolute w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative text-center text-white p-4">
+            <h1 class="text-5xl md:text-7xl italic">Taste the Experience</h1>
+            <p class="mt-4 uppercase tracking-[0.4em] text-xs">Regina Elisabeta 25, București</p>
+        </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
+    <main class="max-w-6xl mx-auto px-6 py-16">
         
-        <section class="mb-16">
-            <h2 class="text-3xl mb-8 italic border-b border-stone-200 pb-2">Meniuri (Oferte Completo)</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="category-card">
-                    <h3 class="text-xl mb-2 uppercase">Meniu Crispy Strips</h3>
-                    <p class="text-stone-500 text-sm mb-4">5 pcs crispy strips + cartofi prăjiți + 3 sosuri + băutură răcoritoare / cafea.</p>
-                    <span class="price-tag">47 RON</span>
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+            
+            <div>
+                <h2 class="text-4xl mb-8 italic border-b-2 border-stone-900 pb-2">Meniuri (Oferte)</h2>
+                <div class="space-y-6 mb-12">
+                    <div class="category-card bg-stone-50 p-6 rounded-2xl">
+                        <h3 class="text-xl uppercase font-bold">Meniu Crispy Strips</h3>
+                        <p class="text-stone-500 text-sm mb-2">5 pcs crispy strips + cartofi prăjiți + 3 sosuri + băutură/cafea.</p>
+                        <span class="price-tag">47 RON</span>
+                    </div>
+                    <div class="category-card bg-stone-50 p-6 rounded-2xl">
+                        <h3 class="text-xl uppercase font-bold">Meniu Smash Burger</h3>
+                        <p class="text-stone-500 text-sm mb-2">Beef classic Smash burger + cartofi prăjiți + băutură/cafea.</p>
+                        <span class="price-tag">48 RON</span>
+                    </div>
                 </div>
-                <div class="category-card">
-                    <h3 class="text-xl mb-2 uppercase">Meniu Nuggets</h3>
-                    <p class="text-stone-500 text-sm mb-4">9 pcs nuggets + cartofi prăjiți + 3 sosuri + băutură răcoritoare / cafea.</p>
-                    <span class="price-tag">47 RON</span>
-                </div>
-                <div class="category-card">
-                    <h3 class="text-xl mb-2 uppercase">Meniu Smash Burger</h3>
-                    <p class="text-stone-500 text-sm mb-4">Beef classic Smash burger + cartofi prăjiți + băutură răcoritoare / cafea.</p>
-                    <span class="price-tag">48 RON</span>
-                </div>
-                <div class="category-card">
-                    <h3 class="text-xl mb-2 uppercase">Meniu Crispy Burger</h3>
-                    <p class="text-stone-500 text-sm mb-4">Crispy burger + cartofi prăjiți + băutură răcoritoare / cafea.</p>
-                    <span class="price-tag">48 RON</span>
-                </div>
-            </div>
-        </section>
 
-        <section class="mb-16">
-            <h2 class="text-3xl mb-8 italic border-b border-stone-200 pb-2">Produse Individuale</h2>
-            <div class="space-y-4">
-                <div class="flex justify-between items-center border-b border-stone-100 py-3">
-                    <span>Chicken crispy strips (5/8 pcs)</span>
-                    <span class="price-tag">31 / 41 RON</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-stone-100 py-3">
-                    <span>Chicken nuggets (6/9 pcs)</span>
-                    <span class="price-tag">21 / 31 RON</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-stone-100 py-3">
-                    <span>Cheese bites (6/9 pcs)</span>
-                    <span class="price-tag">26 / 36 RON</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-stone-100 py-3">
-                    <span>Chicken Crispy Burger / Beef Smash Burger</span>
-                    <span class="price-tag">32 RON</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-stone-100 py-3">
-                    <span>Cartofi prăjiți (Simplu / +Parmesan & Usturoi)</span>
-                    <span class="price-tag">12 / 15 RON</span>
-                </div>
-                <div class="flex justify-between items-center border-b border-stone-100 py-3 font-bold">
-                    <span class="text-red-800">Nutella & Mascarpone Burger</span>
-                    <span class="price-tag">19 RON</span>
+                <h2 class="text-4xl mb-8 italic border-b-2 border-stone-900 pb-2">Individuale</h2>
+                <div class="space-y-2">
+                    <div class="menu-row"><span>Chicken crispy strips (5/8 pcs)</span> <span class="price-tag">31 / 41 RON</span></div>
+                    <div class="menu-row"><span>Chicken nuggets (6/9 pcs)</span> <span class="price-tag">21 / 31 RON</span></div>
+                    <div class="menu-row"><span>Cheese bites (6/9 pcs)</span> <span class="price-tag">26 / 36 RON</span></div>
+                    <div class="menu-row"><span>Beef Smash Burger</span> <span class="price-tag">32 RON</span></div>
+                    <div class="menu-row font-bold text-red-700"><span>Nutella & Mascarpone Burger</span> <span class="price-tag">19 RON</span></div>
                 </div>
             </div>
-          </section>
-<section class="mb-16 bg-stone-900 text-white p-8 rounded-3xl">
-            <h2 class="text-3xl mb-8 italic text-stone-300">Băuturi & Extra</h2>
-            <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
-                <div class="flex justify-between border-b border-stone-800 pb-2">
-                    <span>Coca-Cola / Zero / Fanta / Sprite (350ml)</span>
-                    <span class="text-stone-300 font-serif">8 RON</span>
-                </div>
-                <div class="flex justify-between border-b border-stone-800 pb-2">
-                    <span>Dorna Plată / Minerală (500ml)</span>
-                    <span class="text-stone-300 font-serif">8 RON</span>
-                </div>
-                <div class="flex justify-between border-b border-stone-800 pb-2 text-amber-200">
-                    <span>Nespresso Coffee</span>
-                    <span class="font-serif">8 RON</span>
-                </div>
-                <div class="flex justify-between border-b border-stone-800 pb-2">
-                    <span>Carassia Sparkling Blanc (Pahar / Sticlă)</span>
-                    <span class="text-stone-300 font-serif">36 / 180 RON</span>
-                </div>
-                <div class="flex justify-between border-b border-stone-800 pb-2">
-                    <span>Refill suc dozator</span>
-                    <span class="text-stone-300 font-serif">6 RON</span>
-                </div>
-                <div class="flex justify-between pt-2">
-                    <div class="text-[10px] text-stone-400">
-                        <p class="font-bold uppercase text-stone-300 mb-1">Sosuri (3 RON):</p>
-                        Garlic mayo, Kewpie, BBQ, Sweet Chilli, Honey Chilli, Spicy Garlic.
+
+            <div class="sticky top-24">
+                <img src="foto2.jpg" alt="Meniu Detaliu" class="w-full rounded-3xl shadow-2xl mb-8 object-cover">
+                <div class="bg-stone-900 text-white p-8 rounded-3xl">
+                    <h3 class="text-2xl mb-4 italic">Băuturi & Sosuri</h3>
+                    <div class="text-sm space-y-3">
+                        <div class="flex justify-between border-b border-stone-700 pb-2"><span>Sucuri / Apă</span><span>8 RON</span></div>
+                        <div class="flex justify-between border-b border-stone-700 pb-2"><span>Nespresso Coffee</span><span>8 RON</span></div>
+                        <div class="flex justify-between border-b border-stone-700 pb-2"><span>Carassia Sparkling</span><span>36 RON</span></div>
+                        <p class="text-[10px] text-stone-400 mt-4">SOSURI: Garlic mayo, Kewpie, BBQ, Sweet Chilli, Honey Chilli (3 RON).</p>
                     </div>
                 </div>
             </div>
-        </section>
 
+        </div>
     </main>
 
-    <footer class="py-12 text-center bg-stone-50 border-t border-stone-200">
-        <p class="text-[10px] uppercase tracking-widest text-stone-400 mb-4">© 2026 Room Service 25. Toate prețurile includ TVA.</p>
-        <div class="flex justify-center space-x-6 text-xl text-stone-900">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+    <section id="location" class="py-20 bg-stone-50 text-center px-6">
+        <h2 class="text-3xl mb-4">Ne găsești aici</h2>
+        <p class="text-stone-500 mb-8 uppercase tracking-widest text-xs">B-dul Regina Elisabeta 25, București</p>
+        <div class="max-w-4xl mx-auto h-64 rounded-3xl overflow-hidden shadow-lg border-4 border-white">
+            <iframe src="http://googleusercontent.com/maps.google.com/6" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <div class="mt-12">
+            <a href="https://wa.me/407XXXXXXXX" class="bg-green-600 text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-green-700 transition">Rezervă pe WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="p-10 text-center text-[10px] text-stone-400 uppercase tracking-widest">
+        Room Service 25 • Meniu Digital 2026
     </footer>
 
 </body>
 </html>
-        </section>
+
