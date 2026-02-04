@@ -3,73 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Service 25 | Comandă prin Glovo</title>
+    <title>Room Service 25 | Meniu Complet</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;600&display=swap');
-        body { font-family: 'Montserrat', sans-serif; background-color: #fff; color: #1a1a1a; scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #fcfcfc; color: #1a1a1a; scroll-behavior: smooth; }
         h1, h2, h3, .font-serif { font-family: 'Italiana', serif; }
-        .price-tag { color: #8b7355; font-weight: 600; font-family: 'Italiana', serif; font-size: 1.25rem; }
-        .glovo-btn { background-color: #ffc244; color: #00a082; font-weight: 700; transition: transform 0.2s; }
-        .glovo-btn:hover { transform: scale(1.05); }
+        .price { font-family: 'Italiana', serif; font-weight: 600; color: #8b7355; font-size: 1.15rem; }
+        .glovo-btn { background-color: #ffc244; color: #00a082; font-weight: 800; }
+        .menu-card { border-bottom: 1px solid #f0f0f0; padding: 12px 0; display: flex; justify-content: space-between; align-items: flex-end; }
     </style>
 </head>
 <body>
 
-    <nav class="p-5 sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-stone-100 flex justify-between items-center">
-        <span class="text-xl font-serif tracking-widest text-stone-900 uppercase">Room Service 25</span>
-        <a href="https://glovoapp.com/ro/ro/bucuresti/room-service-buc/" target="_blank" class="glovo-btn px-6 py-2 rounded-full text-[10px] uppercase tracking-widest shadow-md">
-            Comandă pe Glovo
+    <nav class="p-4 sticky top-0 bg-white/95 backdrop-blur-sm z-50 border-b border-stone-100 flex justify-between items-center">
+        <span class="text-lg font-serif tracking-tighter text-stone-900 uppercase">Room Service 25</span>
+        <a href="https://glovoapp.com/ro/ro/bucuresti/room-service-buc/" target="_blank" class="glovo-btn px-5 py-2 rounded-full text-[10px] uppercase tracking-widest shadow-sm">
+            Comandă prin Glovo
         </a>
     </nav>
 
-    <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
-        <img src="foto1.jpg" alt="Room Service Food" class="absolute w-full h-full object-cover">
-        <div class="absolute inset-0 bg-black/40"></div>
-        <div class="relative text-center text-white p-4">
-            <h1 class="text-5xl md:text-7xl italic">Taste the Experience</h1>
-            <p class="mt-4 uppercase tracking-[0.4em] text-xs">Regina Elisabeta 25, București</p>
+    <header class="h-[50vh] relative overflow-hidden">
+        <img src="foto1.jpg" alt="Room Service Burger" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-10 left-0 right-0 text-center text-white">
+            <h1 class="text-5xl italic">Deliciously Urban</h1>
+            <p class="text-xs uppercase tracking-[0.3em] mt-2 opacity-80">Regina Elisabeta 25, București</p>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-2 gap-16 items-start">
-            
-            <div>
-                <h2 class="text-4xl mb-8 italic border-b-2 border-stone-900 pb-2">Meniuri Oferte</h2>
-                <div class="space-y-4 mb-12 text-sm">
-                    <div class="flex justify-between border-b border-stone-100 py-3"><span>Meniu Crispy Strips + Suc/Cafea</span><span class="price-tag">47 RON</span></div>
-                    <div class="flex justify-between border-b border-stone-100 py-3"><span>Meniu Smash Burger + Suc/Cafea</span><span class="price-tag">48 RON</span></div>
-                    <div class="flex justify-between border-b border-stone-100 py-3"><span>Meniu Nuggets + Suc/Cafea</span><span class="price-tag">47 RON</span></div>
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <section class="mb-16">
+            <h2 class="text-3xl mb-8 italic border-b-2 border-stone-800 pb-2 uppercase tracking-tighter">Oferte Completo</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100">
+                    <h3 class="text-xl font-bold uppercase mb-1">Meniu Crispy Strips</h3>
+                    <p class="text-stone-500 text-xs mb-4 italic leading-relaxed">5 pcs crispy strips + cartofi prăjiți + 3 sosuri + băutură răcoritoare / cafea *la alegere</p>
+                    <span class="price">47 RON</span>
                 </div>
-
-                <h2 class="text-4xl mb-8 italic border-b-2 border-stone-900 pb-2">Individuale</h2>
-                <div class="space-y-2 text-sm">
-                    <div class="flex justify-between border-b border-stone-100 py-2"><span>Chicken crispy strips (5/8 pcs)</span><span class="price-tag">31/41 RON</span></div>
-                    <div class="flex justify-between border-b border-stone-100 py-2"><span>Chicken nuggets (6/9 pcs)</span><span class="price-tag">21/31 RON</span></div>
-                    <div class="flex justify-between border-b border-stone-100 py-2 font-bold text-red-700"><span>Nutella & Mascarpone Burger</span><span class="price-tag">19 RON</span></div>
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100">
+                    <h3 class="text-xl font-bold uppercase mb-1">Meniu Nuggets</h3>
+                    <p class="text-stone-500 text-xs mb-4 italic leading-relaxed">9 pcs nuggets + cartofi prăjiți + 3 sosuri + băutură răcoritoare / cafea *la alegere</p>
+                    <span class="price">47 RON</span>
                 </div>
-            </div>
-
-            <div class="sticky top-24 text-center">
-                <img src="foto2.jpg" alt="Meniu Detaliu" class="w-full rounded-3xl shadow-xl mb-8">
-                
-                <div class="p-8 bg-stone-50 rounded-3xl border border-stone-200">
-                    <h3 class="text-2xl mb-4 italic">Ți-e foame?</h3>
-                    <p class="text-stone-500 mb-6 text-sm">Comandă preparatele noastre preferate direct la tine acasă prin Glovo.</p>
-                    
-                    <a href="https://glovoapp.com/ro/ro/bucuresti/room-service-buc/" target="_blank" class="glovo-btn block w-full py-5 rounded-2xl text-lg shadow-lg flex items-center justify-center gap-3">
-                        <img src="https://glovoapp.com/images/glovo-white.svg" class="w-8 h-8" style="filter: brightness(0) saturate(100%) invert(39%) sepia(88%) font-weight: bold;">
-                        Comandă acum pe GLOVO
-                    </a>
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100">
+                    <h3 class="text-xl font-bold uppercase mb-1">Meniu Smash Burger</h3>
+                    <p class="text-stone-500 text-xs mb-4 italic leading-relaxed">beef classic Smash burger + cartofi prăjiți + băutură răcoritoare / cafea *la alegere</p>
+                    <span class="price">48 RON</span>
+                </div>
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100">
+                    <h3 class="text-xl font-bold uppercase mb-1">Meniu Crispy Burger</h3>
+                    <p class="text-stone-500 text-xs mb-4 italic leading-relaxed">crispy burger + cartofi prăjiți + băutură răcoritoare / cafea *la alegere</p>
+                    <span class="price">48 RON</span>
                 </div>
             </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl mb-8 italic border-b-2 border-stone-800 pb-2 uppercase tracking-tighter">Produse Individuale</h2>
+            <div class="space-y-1">
+                <div class="menu-card"><span>Chicken crispy strips <small class="text-stone-400 ml-2">5/8 pcs</small></span><span class="price">31/41 RON</span></div>
+                <div class="menu-card"><span>Chicken nuggets <small class="text-stone-400 ml-2">6/9 pcs</small></span><span class="price">21/31 RON</span></div>
+                <div class="menu-card"><span>Cheese bites <small class="text-stone-400 ml-2">6/9 pcs</small></span><span class="price">26/36 RON</span></div>
+                <div class="menu-card"><span>Chicken Crispy burger</span><span class="price">32 RON</span></div>
+                <div class="menu-card"><span>Beef classic Smash burger</span><span class="price">32 RON</span></div>
+                <div class="menu-card"><span>Cartofi prăjiți</span><span class="price">12 RON</span></div>
+                <div class="menu-card"><span>Refill cartofi prăjiți</span><span class="price">6 RON</span></div>
+                <div class="menu-card"><span>Cartofi prăjiți + parmezan + usturoi</span><span class="price">15 RON</span></div>
+                <div class="menu-card"><span>Extra Cheddar</span><span class="price">6 RON</span></div>
+                <div class="menu-card font-bold text-red-800 italic"><span>Nutella & Mascarpone burger</span><span class="price">19 RON</span></div>
+            </div>
+        </section>
+
+        <div class="my-16 rounded-3xl overflow-hidden shadow-xl">
+            <img src="foto2.jpg" alt="Room Service Spread" class="w-full">
         </div>
+
+        <section class="mb-16 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl mb-6 italic border-b border-stone-200">Băuturi</h2>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between"><span>Coca-Cola / Zero / Fanta / Sprite <small>(350ML)</small></span><span class="price">8 RON</span></div>
+                    <div class="flex justify-between"><span>Dorna plată / minerală <small>(500ML)</small></span><span class="price">8 RON</span></div>
+                    <div class="flex justify-between"><span>Nespresso</span><span class="price">8 RON</span></div>
+                    <div class="flex justify-between"><span>Refill suc dozator</span><span class="price">6 RON</span></div>
+                    <div class="flex justify-between mt-4">
+                        <div>
+                            <p class="font-bold">Sparkling <small>(150/750ML)</small></p>
+                            <p class="text-[10px] text-stone-400 uppercase tracking-tighter italic">Carassia Blanc de Blancs</p>
+                        </div>
+                        <span class="price">36/180 RON</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-6 bg-stone-900 text-white rounded-2xl">
+                <h2 class="text-2xl mb-4 italic text-stone-300">Sosuri <span class="text-sm ml-2">3 RON</span></h2>
+                <p class="text-xs leading-relaxed text-stone-400 uppercase tracking-tighter">
+                    Garlic mayo, Kewpie Japanese mayo, Ketchup, Barbecue, Sweet chilli, Honey chilli dip, Spicy garlic boom
+                </p>
+                <a href="https://glovoapp.com/ro/ro/bucuresti/room-service-buc/" target="_blank" class="glovo-btn mt-8 block w-full py-4 rounded-xl text-center text-xs shadow-lg">
+                   ÎNLOCUIEȘTE GUSTAREA • COMANDĂ ACUM
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="p-12 text-center text-[10px] text-stone-400 uppercase tracking-widest bg-stone-50">
-        Room Service 25 • Regina Elisabeta 25 • București
+    <footer class="bg-stone-50 py-10 px-6 text-center border-t border-stone-200">
+        <p class="text-[10px] text-stone-400 uppercase tracking-[0.5em] mb-4">Room Service 25 • București</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://www.instagram.com/room.service.25" class="text-stone-900"><i class="fab fa-instagram text-xl"></i></a>
+        </div>
     </footer>
 
 </body>
