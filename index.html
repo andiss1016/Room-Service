@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Service | Calea Victoriei 139</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;600&display=swap');
+        body { font-family: 'Montserrat', sans-serif; background-color: #0f0f0f; color: #fff; scroll-behavior: smooth; }
+        h1, h2, .font-serif { font-family: 'Italiana', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1551632432-c736ec37628c?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center;
+        }
+    </style>
+</head>
+<body> 
+
+    <nav class="flex justify-between items-center p-6 fixed w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/10">
+        <div class="text-2xl font-serif tracking-[0.2em]">ROOM SERVICE</div>
+        <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.3em]">
+            <a href="#menu" class="hover:text-amber-200 transition">Meniu</a>
+            <a href="#location" class="hover:text-amber-200 transition">Locație</a>
+            <a href="https://wa.me/407XXXXXXXX" class="bg-white text-black px-4 py-2 rounded-full hover:bg-amber-200 transition">Rezervă Masă</a>
+        </div>
+    </nav> 
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 hero-bg">
+        <span class="text-xs uppercase tracking-[0.5em] mb-4 text-amber-200">Urban Bistro & Specialty Coffee</span>
+        <h1 class="text-5xl md:text-8xl mb-6">Fine Dining for the Soul.</h1>
+        <p class="max-w-xl text-stone-300 font-light italic text-lg">Calea Victoriei 139 — locul unde estetica întâlnește gustul.</p>
+        <a href="#menu" class="mt-10 border border-white px-10 py-4 rounded-full uppercase text-[10px] tracking-[0.3em] hover:bg-white hover:text-black transition">Vezi Meniul Complet</a>
+    </section> 
+
+    <section id="menu" class="py-24 px-6 bg-stone-50 text-stone-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl mb-4 italic">Favoritele Casei</h2>
+                <p class="text-stone-500 uppercase text-[10px] tracking-widest">Selecție din meniul Room Service</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex justify-between items-start border-b border-stone-200 pb-6">
+                    <div>
+                        <h3 class="text-xl font-medium">Shakshuka Room Service</h3>
+                        <p class="text-stone-500 text-sm mt-1">Ouă bio, sos de roșii cu ardei copt, brânză feta și lipie caldă.</p>
+                    </div>
+                    <span class="font-serif text-lg">42 RON</span>
+                </div>
+                <div class="flex justify-between items-start border-b border-stone-200 pb-6">
+                    <div>
+                        <h3 class="text-xl font-medium">Specialty Flat White</h3>
+                        <p class="text-stone-500 text-sm mt-1">Cafea de specialitate proaspăt prăjită, lapte cremos.</p>
+                    </div>
+                    <span class="font-serif text-lg">18 RON</span>
+                </div>
+                <div class="flex justify-between items-start border-b border-stone-200 pb-6">
+                    <div>
+                        <h3 class="text-xl font-medium">Truffle Pasta</h3>
+                        <p class="text-stone-500 text-sm mt-1">Tagliatelle cu trufe negre, parmezan 24 luni și unt franțuzesc.</p>
+                    </div>
+                    <span class="font-serif text-lg">65 RON</span>
+                </div>
+                <div class="flex justify-between items-start border-b border-stone-200 pb-6">
+                    <div>
+                        <h3 class="text-xl font-medium">Signature Cheesecake</h3>
+                        <p class="text-stone-500 text-sm mt-1">Servit cu fructe de pădure și crumble de migdale.</p>
+                    </div>
+                    <span class="font-serif text-lg">34 RON</span>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="location" class="py-24 bg-white text-stone-900 px-6 border-t border-stone-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-0 shadow-2xl rounded-3xl overflow-hidden">
+            <div class="bg-stone-900 text-white p-12 flex flex-col justify-center">
+                <h2 class="text-4xl mb-6 italic">Te așteptăm pe Victoriei.</h2>
+                <p class="text-stone-400 mb-8 leading-relaxed">Suntem situați în inima Bucureștiului, într-o clădire istorică unde designul minimalist întâlnește căldura unei cafele bune.</p>
+                <div class="space-y-4 text-sm tracking-widest uppercase">
+                    <p><i class="fas fa-map-marker-alt mr-3 text-amber-200"></i> Calea Victoriei 139, București</p>
+                    <p><i class="fas fa-clock mr-3 text-amber-200"></i> Luni - Duminică: 09:00 - 22:00</p>
+                    <p><i class="fas fa-phone mr-3 text-amber-200"></i> +40 7XX XXX XXX</p>
+                </div>
+            </div>
+            <div class="h-[450px]">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.463372225679!2d26.088321!3d44.444265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4443e0d869%3A0x6e9a6174a787b8f9!2sCalea%20Victoriei%20139%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro" 
+                    class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section> 
+
+    <footer class="p-12 text-center text-[10px] uppercase tracking-[0.5em] text-stone-500">
+        Creat special pentru Room Service Bucharest • 2026
+    </footer> 
+
+</body>
+</html>
